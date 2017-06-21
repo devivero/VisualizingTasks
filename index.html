@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TODO APP</title>
+    <link href="//fonts.googleapis.com/css?family=Carrois Gothic" rel='stylesheet'>
+    <link href="//fonts.googleapis.com/css?family=Kalam" rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="jscript.js"></script>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        margin-left: 5%;
+        font-family: "Carrois Gothic", Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+        //color: green;
+        text-decoration: underline
+      }
+      .list {
+        font-family: "Kalam", Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        color: green;
+        font-size: 1.25rem;
+      }
+      .chart {
+        margin-left: 3%;
+        padding: 1rem;
+        width: 40%;
+      }
+      form {
+        margin-left: 5%;
+        padding: 1rem;
+        border: 1px gray solid;
+        width: 90%;
+        font-family: "Carrois Gothic", Helvetica, Arial, sans-serif;
+      }
+      label:after {
+        content: "";
+        display: table;
+        margin-bottom: 1rem;
+      }
+      img {
+        margin-left: 5%;
+        width: 90%;
+      }
+      @media(min-width: 700px){
+        form {
+          width: 40%;
+          float: left;
+        }
+        img {
+          width: 40%;
+          float: right;
+          margin-right: 5%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>My TODO List</h1>
+
+    <div class="list" id="list-container"></div>
+    <div class="chart" id="chart-container"></div>
+
+    <div>
+      <img src="images/checklist-150938_960_720.png" alt="two smiling people with a checklist on hand">
+    </div>
+
+    <form name="task-assigment">
+      <label> Task Description:
+        <input type="text" name="taskDesc">
+      </label>
+      <label> Task Difficulty
+        <select id="difficulty">
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Person</legend>
+        <label>
+          <input type="radio" name="person" value="Sijan" checked="checked">Sijan
+          <input type="radio" name="person" value="Alexander">Alexander
+          <input type="radio" name="person" value="Christopher">Christopher
+        </label>
+      </fieldset>
+      <input type="submit">
+    </form>
+
+  </body>
+</html>
