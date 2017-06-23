@@ -5,6 +5,10 @@ var tasks = []
   "difficulty": "",
   "person": ""
 }*/
+//draw google charts
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawStacked);
+
 function drawList() {
   // Select #list-container element from HTML
   var parent = document.getElementById("list-container")
@@ -24,8 +28,8 @@ function drawList() {
   parent.appendChild(ul)
 
   //draw google charts
-  google.charts.load('current', {packages: ['corechart', 'bar']});
-  google.charts.setOnLoadCallback(drawStacked);
+  //google.charts.load('current', {packages: ['corechart', 'bar']});
+  //google.charts.setOnLoadCallback(drawStacked);
 }
 // Form submit handler
 function addInfo(){
