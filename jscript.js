@@ -1,6 +1,6 @@
 var tasks = []
 
-/*var task = {
+/*var tasks = {
   "description": "",
   "difficulty": "",
   "person": ""
@@ -35,7 +35,7 @@ function addInfo(){
   var newTask = {
     description: form.taskDesc.value,
     difficulty: document.getElementById('difficulty').value,
-    person: form.person.value,
+    person: form.person.value
   }
   // Insert new task object into taskList array
   tasks.push(newTask)
